@@ -8,3 +8,7 @@ p{
     background-color:rgba(20,40,50,0.5);
     color: white;
 }
+.classe-1{
+    background-color: rgb(255,0,0);
+    padding: 5%;
+}
