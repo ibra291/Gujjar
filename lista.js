@@ -1,6 +1,6 @@
 const bottoneAggiungi = document.getElementById('bottone-aggiungi')
-const lista = document.getElementById('lista')
-const bottoneTogli = document.getElementById('bottone-togli')
+const lista = document.getElementById('miaLista')
+const bottoneSvuota = document.getElementById('svuota');
 
 
 console.log(lista.children.length);
@@ -8,13 +8,15 @@ console.log(lista.children.length);
 //al click del mouse attiva la funzione anomina
 bottoneAggiungi.addEventListener('click', function () {
 
-    //apre un prompt per l'inserimento del testo
     const userInput = prompt("inserisci il testo");
-    //creo un nuovo elemento list item
     const nuovoElemento = document.createElement('li');
+    const iconaCestino = document.createElement('span')
 
     nuovoElemento.textContent = userInput;
-    lista.appendChild(nuovoElemento);
+    iconaCestino.textContent = "🗑️"
+    iconaCestino
+
+    
 }
 
 
@@ -28,4 +30,3 @@ bottoneTogli.addEventListener('click', function () {
 }
 
 )
-
