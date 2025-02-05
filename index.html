@@ -2,55 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Esempio utilizzo flexbox</title>
-    <style>
-        p{
-           background-color: rgb(222, 255, 75);
-           margin: 1%;
-        }
-        .container-paragrafi{
-            display: flex;
-            background-color: rgb(255, 0, 0);
-
-        }
-
-        .container-video{
-                display: flex; /*attiva la odalità flex box*/
-                flex-direction: column; /*Dispone gli elementi in verticale*/
-                align-items: center; /*allinea al centro*/
-                background-color: rgb(38, 38, 104);
-        }
-
-        .container-button{
-            display: flex;
-            flex-direction: row-reverse ;
-    }
-        
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <script>
+        function update(){
+            const now = new Date()
+            console.log(now);
+        }
 
-    <div class="container-bottone">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-    </div>
-    <div class="container-paragrafi">
-        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem dolore magni suscipit alias porro quibusdam nobis minus dolores quia et ipsa voluptate illum totam, beatae ab, error labore reprehenderit.</p>
-        <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis ex deleniti eum delectus consequatur tempora? Saepe, laboriosam laborum. Quisquam temporibus et velit doloremque consectetur voluptatem eum natus aut culpa!</p>
-        <p>3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea provident illo dolores quaerat beatae! Cumque, mollitia, expedita aliquam obcaecati aut architecto nesciunt necessitatibus saepe eveniet ipsam asperiores assumenda quo praesentium.</p>
-    </div>
+        setInterval(update, 1000);
 
-    <div class="container-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HhrcKRLFhlc?si=eLueKr4JPXnljoSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HhrcKRLFhlc?si=eLueKr4JPXnljoSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HhrcKRLFhlc?si=eLueKr4JPXnljoSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    
-    
+    </script>
+</body>
 </html>
-       
