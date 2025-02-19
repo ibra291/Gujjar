@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orologio</title>
 </head>
 <body>
+    <div id="orologio">00:00:00</div>
     <script>
-        function update(){
-            const now = new Date()
-            console.log(now);
-        }
+        let orologio = createElement('div')
 
-        setInterval(update, 1000);
+        function aggionaOrologio(){
+            let adesso = new Date();
+            let ora = String(adesso.getHours()).padStart(2,'0')
+            let minuti = String(adesso.getMinutes()).padStart(2,'0')
+            let secondi = String(adesso.getSeconds()).padStart(2,'0')
+            console.log(ora + ":" + minuti + ":" + secondi);
+            orologio.textContext = ora + ":" + ;
+            
+       }
 
+       setInterval(aggionaOrologio,1000);
+
+        
     </script>
 </body>
 </html>
