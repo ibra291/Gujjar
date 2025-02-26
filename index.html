@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
     <title>Orologio</title>
 </head>
 <body>
     <div id="orologio">00:00:00</div>
     <script>
-        let orologio = createElement('div')
 
-        function aggionaOrologio(){
+        function aggiornaOrologio(){
             let adesso = new Date();
-            let ora = String(adesso.getHours()).padStart(2,'0')
-            let minuti = String(adesso.getMinutes()).padStart(2,'0')
-            let secondi = String(adesso.getSeconds()).padStart(2,'0')
+            let ora = String(adesso.getHours()).padStart(2,'0');
+            let minuti = String(adesso.getMinutes()).padStart(2,'0');
+            let secondi = String(adesso.getSeconds()).padStart(2,'0');
             console.log(ora + ":" + minuti + ":" + secondi);
-            orologio.textContext = ora + ":" + ;
-            
-       }
+            const orologio = document.getElementById('orologio');
+            orologio.textContext = ora + ":" + minuti + ":" + secondi;
+        }
 
-       setInterval(aggionaOrologio,1000);
+        setInterval(aggiornaOrologio,1000);
 
         
     </script>
 </body>
 </html>
+
+
+<style>
+    body{
+        text-align: center;
+        background-color
+    }
+    #orologio{
+        background-color: rgb(233, 217, 223);
+        padding: 2%;
+        font-size: 15em;
+
+    }
+</style>
